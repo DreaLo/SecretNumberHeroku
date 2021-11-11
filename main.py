@@ -12,11 +12,11 @@ def index_date():
 
 @webapp.route("/", methods=["GET"])
 def index():
-    secret_number = request.cookies.get("secret_number")  # check if there is already a cookie named secret_number
+    secret_number = request.cookies.get("secret_number")
 
     response = make_response(render_template("index.html"))
-    if not secret_number:  # if not, create a new cookie
-        new_secret = random.randint(1, 30)
+    if not secret_number:
+        new_secret = random.randint(1, 20)
         response.set_cookie("secret_number", str(new_secret))
 
     return response
@@ -30,7 +30,7 @@ def result():
     if guess == secret_number:
         message = "Correct! The secret number is {0} !".format(str(secret_number))
         response = make_response(render_template("result-win.html", message=message))
-        response.set_cookie("secret_number", str(random.randint(1, 30)))  # set the new secret number
+        response.set_cookie("secret_number", str(random.randint(1, 20)))
         return response
     elif guess > secret_number:
         message = "Your guess is not correct... Let's try something smaller."
