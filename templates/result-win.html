@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Success{% endblock title %}
+
+{% block header %}
+	<header id="main-header">
+		<div class="container">
+			<h1>The Game - Success</h1>
+		</div>
+	</header>
+{% endblock header %}
+{% block section %}
+	<section id="showcase-win">
+			<div class="container">
+				<h1> Congratulations! This is correct!
+				</h1>
+			</div>
+	</section>
+{% endblock section %}
+{% block container %}
+	<div class="container">
+		<section id="main-result">
+             <h1>{{ message }}</h1>
+            <p><a href="/" class="button">Play again!</a></p>
+        </section>
+    </div>
+{%endblock container%}
+{% block content %}
+
+{% endblock content %}

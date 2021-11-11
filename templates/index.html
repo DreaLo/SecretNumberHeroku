@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block header %}
+	<header id="main-header">
+		<div class="container">
+			<h1>The Game</h1>
+		</div>
+	</header>
+{% endblock header %}
+
+{% block section %}
+	<section id="showcase">
+			<div class="container">
+				<h1> Guess the secret number!
+				</h1>
+			</div>
+	</section>
+{% endblock section %}
+
+{% block container %}
+	<div class="container">
+		<section id="main">
+			<h1>Please, enter your Guess!</h1>
+			<!--<p>Heute ist der {{ date }}!</p>-->
+			<form method="post" action="/result">
+				<input type="text" name="guess" placeholder="Enter your guess">
+				<br>
+
+				<button type="submit" class="button">Submit</button>
+			</form>
+		</section>
+		<aside id="sidebar">
+			<div class="score">
+				<h3>The current HighScore!</h3>
+				<p> The best player needed only 2 tries to find the number he was looking for!</p>
+			</div>
+		</aside>
+	</div>
+{% endblock container %}
+{% block content %}
+{% endblock content %}
