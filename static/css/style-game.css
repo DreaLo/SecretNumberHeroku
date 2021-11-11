@@ -1,0 +1,123 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+
+.container{
+    display: block;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+input{
+    border: 3px coral solid;
+    border-radius: 5px;
+    height: 16px;
+    width: 60%;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.button {
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.2;
+    }
+
+#main-header{
+	background-color:coral;
+	color:#fff;
+}
+
+#main{
+	float:left;
+	width:60%;
+	padding:0 30px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#main-result{
+	padding:0 30px;
+	text-align: center;
+}
+
+#showcase{
+    background-image:url("/static/img/secret.jpg");
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+}
+#showcase-win{
+    background-image:url("/static/img/correct.jpg");
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+}
+#showcase h1{
+	color:#fff;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:30px;
+}
+#showcase-win h1{
+	color:#000;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:30px;
+}
+
+
+#sidebar{
+	float:right;
+	width:30%;
+	background: #333;
+	color:#fff;
+	padding:10px;
+	margin: 20px;
+	box-sizing: border-box;
+
+}
+#sidebar .score{
+    min-height: 200px;
+    margin: 20px;
+}
+
+#main-footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
